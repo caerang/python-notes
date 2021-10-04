@@ -1,3 +1,3 @@
-# Welcome to Problem Solving
+# Python Notes
 
-프로그래밍 연습을 하기 위한 사이트 입니다
+파이썬을 사용하면서 자주 사용하는 문법을 정리합니다.
