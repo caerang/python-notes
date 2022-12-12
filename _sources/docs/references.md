@@ -1,0 +1,1 @@
+Python 기본 문법 및 코드 snippets: https://gaussian37.github.io/python-basic-snippets/
