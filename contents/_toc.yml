@@ -5,7 +5,3 @@ format: jb-book
 root: docs/intro
 chapters:
 - file: docs/overview
-- file: docs/basic/list.ipynb
-- file: docs/basic/tuples.ipynb
-- file: docs/dictionary/snippet_dictionary.ipynb
-- file: docs/directory/snippet_directory.ipynb
