@@ -346,11 +346,11 @@ document.write(`
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># os.path.basename(&#39;전체 경로&#39;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># os.path.basename(&#39;전체 경로&#39;)</span>
 
-import os
-# Linux or macOS
-os.path.basename(&#39;/home/user/project/setup.py&#39;)
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="c1"># Linux or macOS</span>
+<span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="s1">&#39;/home/user/project/setup.py&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -369,20 +369,20 @@ os.path.basename(&#39;/home/user/project/setup.py&#39;)
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># os.path.splitext(&#39;파일 이름&#39;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># os.path.splitext(&#39;파일 이름&#39;)</span>
 
-import os
-# 파일 이름만 있는 경우
-result = os.path.splitext(&#39;setup.py&#39;)
-print(result)
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="c1"># 파일 이름만 있는 경우</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="s1">&#39;setup.py&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 
-# 파일 이름에 절대 경로가 포함된 경우
-result = os.path.splitext(&#39;/home/python/tutorials/setup.py&#39;)
-print(result)
+<span class="c1"># 파일 이름에 절대 경로가 포함된 경우</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="s1">&#39;/home/python/tutorials/setup.py&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 
-# 파일 이름에 상대 경로가 포함된 경우
-result = os.path.splitext(&#39;python/tutorials/splitext.py&#39;)
-print(result)
+<span class="c1"># 파일 이름에 상대 경로가 포함된 경우</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="s1">&#39;python/tutorials/splitext.py&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -404,10 +404,10 @@ print(result)
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># os.listdir(&#39;파일 또는 폴더&#39;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># os.listdir(&#39;파일 또는 폴더&#39;)</span>
 
-import os
-os.listdir(&#39;/&#39;)
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

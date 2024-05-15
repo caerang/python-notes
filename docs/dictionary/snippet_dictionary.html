@@ -327,7 +327,7 @@ document.write(`
                   
   <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Dictionary 관련 활용하기
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dictionary 관련 활용하기</span>
 </pre></div>
 </div>
 </div>
@@ -343,23 +343,23 @@ document.write(`
 <p>annotations dictionary에 img_id key가 없으면 img_id를 새로운 키로 생성하고 초기화 한다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># data는 이미 구성되어 있다고 가정
-data = {&#39;annotations&#39;:[{&#39;img_id&#39;: &#39;00001&#39;},]}
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># data는 이미 구성되어 있다고 가정</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;annotations&#39;</span><span class="p">:[{</span><span class="s1">&#39;img_id&#39;</span><span class="p">:</span> <span class="s1">&#39;00001&#39;</span><span class="p">},]}</span>
 
-annotations = {}
-for annotation in data[&#39;annotations&#39;]:
-    img_id = annotation[&#39;img_id&#39;]
-    if img_id not in annotations:
-        annotations[img_id] = []
+<span class="n">annotations</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">annotation</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;annotations&#39;</span><span class="p">]:</span>
+    <span class="n">img_id</span> <span class="o">=</span> <span class="n">annotation</span><span class="p">[</span><span class="s1">&#39;img_id&#39;</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">img_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">annotations</span><span class="p">:</span>
+        <span class="n">annotations</span><span class="p">[</span><span class="n">img_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">annotation</span>
 
-    annotations[img_id].append(annotation)
+<span class="c1">#    annotations[img_id].append(annotation)</span>
 
-print(annotations)
+<span class="nb">print</span><span class="p">(</span><span class="n">annotations</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;00001&#39;: [{&#39;img_id&#39;: &#39;00001&#39;}]}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;00001&#39;: {&#39;img_id&#39;: &#39;00001&#39;}}
 </pre></div>
 </div>
 </div>
